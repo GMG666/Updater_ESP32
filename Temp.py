@@ -10,7 +10,7 @@ RELPIN2KALT = Pin(33, Pin.OUT)
 
 # create the onewire object
 ds = DS18X20(OneWire(dat))
-print('Vers 4.0')
+print('Vers 5.0')
 # scan for devices on the bus
 roms = ds.scan()
 print('found devices:', roms)
