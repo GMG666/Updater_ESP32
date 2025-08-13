@@ -26,7 +26,7 @@ REL4 = Pin(26, Pin.OUT) # Mischer waermer
 # create the onewire object
 ds = DS18X20(OneWire(dat))
 print('ESP_BHMixer1\Main\BHMixer1_Mqtt by GMG 2025')
-Vers = 'Vers 2.0'
+Vers = 'Vers 5.0'
 print(Vers)
 # scan for devices on the bus
 roms = ds.scan()
@@ -245,4 +245,5 @@ while True:
            client.publish(infotxt, Statustxt)   
     except OSError as e:
         restart_and_reconnect()
+
 
