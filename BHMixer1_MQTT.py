@@ -16,7 +16,7 @@ gc.collect()
 
 # Tempsection 1 Wire
 
-dat = Pin(18) #ex 14 Tempsensor Nr1
+dat = Pin(14) #ex 14 Tempsensor Nr1
 
 REL1 = Pin(32, Pin.OUT) # EHeat
 REL2 = Pin(33, Pin.OUT) # Pumpe
@@ -245,3 +245,4 @@ while True:
            client.publish(infotxt, Statustxt)   
     except OSError as e:
         restart_and_reconnect()
+
